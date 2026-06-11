@@ -1,0 +1,296 @@
+<!-- ==================================================================================
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣐⡟⡿⣷⡾⠿⢫⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣎⣠⣁⣾⣇⣘⣄⢻⡣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡺⠋⢠⠏⡹⢻⡏⢏⠱⡄⠙⣷⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⣾⣿⠞⠑⣰⠗⠚⠁⣿⡇⠈⠒⠽⣄⠚⢻⣿⡤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣾⡿⠃⢀⣼⠑⠀⠀⣰⣿⣷⡀⠀⠀⠈⢦⡀⠙⢿⣖⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣿⣿⠋⠀⣠⠞⠀⠀⠀⣰⣿⠏⠹⣿⣄⠀⠀⠀⠻⣄⠀⠙⢷⣕⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣶⣾⣿⠏⠓⢠⡶⠁⠀⠀⢀⣼⡿⠁⠀⠀⠈⢿⣇⠀⠀⠀⠈⢳⡄⠚⠛⢷⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣵⣿⠟⠀⢀⣴⠏⠀⠀⠀⢠⡾⡗⠁⠀⠀⠀⠀⠈⢻⣷⡀⠀⠀⠀⠙⣦⡀⠈⠹⣾⡢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣿⠟⠁⠀⣠⡋⠀⠀⠀⠀⣠⣿⠝⠀⠀⠀⠀⠀⠀⠀⠀⠫⣿⣄⠀⠀⠀⠀⠹⣤⡀⠈⠻⣮⡢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠟⠁⢀⣠⠛⠁⠀⠀⠀⢀⣴⢿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⡿⣦⡀⠀⠀⠀⠈⠻⢦⡀⠈⠻⣮⣢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡼⠞⠋⠀⣠⡴⠋⠀⠀⠀⠀⢀⣤⡿⠯⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢟⢿⣆⡀⠀⠀⠀⠀⠙⢶⡤⣀⠙⠿⢵⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⢼⠟⠀⠀⢀⡾⠃⠀⠀⠀⠀⢀⣴⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣭⢦⡀⠀⠀⠀⠀⠈⢧⠁⠀⠀⠻⣣⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣮⠋⠀⠀⡐⠁⠀⠀⠀⠀⠀⠀⢠⢏⣏⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣼⣛⡆⠀⠀⠀⠀⠀⠀⠀⠢⠀⠀⠹⣵⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠠⡶⠃⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⢀⣏⣾⠍⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠩⣷⣱⡀⠀⠀⠀⠀⠀⠀⠀⠑⠄⠀⠘⣶⠄⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⡰⡽⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣣⣿⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⢆⠀⠀⠀⠀
+⠀⠀⠀⠀⣴⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡼⢱⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢙⣿⡍⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡦⡀⠀⠀
+⠀⠀⡠⣾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⣋⠴⢻⡼⡶⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣮⢇⡿⢎⡜⢆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⠄⠀
+⢀⣴⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠓⣬⠞⠉⢷⣻⣵⠄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣼⣞⣾⠉⠳⣌⠏⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⡦
+⡼⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⢣⡽⠁⠀⠀⠀⠈⠋⠙⠚⠛⠛⠶⠦⢴⣢⡀⡀⠀⠀⠀⣀⣤⡦⠴⠿⠛⠛⠓⠛⠷⠋⠁⠀⠀⠈⢾⡘⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠵⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢾⡦⣰⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠪⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣀⣠⣡⣃⠀⠀⠀⠀⢻⡏⠀⠀⠀⠀⣈⣄⣤⡤⢤⠤⡤⢤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡠⢔⣪⣽⢶⠗⠟⠛⠛⠛⠛⠛⠗⣿⢾⣍⣢⣸⣄⢖⣭⡷⣿⠻⠟⠛⠛⠛⠛⠿⠳⡶⣭⡓⢦⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢠⣴⠒⣦⢩⡍⣯⣶⣽⣾⡟⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠊⣿⣿⣿⡏⡗⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⢻⢳⣶⣦⡝⡍⠓⠒⢲⣦⡄⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⡠⢾⣵⣾⡗⠞⠿⠿⠋⠛⠁⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠛⠛⠽⠿⠛⢶⣶⣭⡗⣤⡀⠀⠀⠀
+⠀⠀⠀⡠⢎⣼⡾⡏⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢙⣶⡥⡹⢄⠀⠀
+⠀⣠⠮⡱⣹⠯⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⢿⣧⢍⠳⡄
+⡴⣡⢣⡽⡛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢺⢯⢎⡱
+⠳⢂⣿⠕⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⣻⣴⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀=========================================--=========================================⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    ███████╗███████╗ ██████╗     ██████╗ ██████╗ ██╗██████╗ ███████╗
+    ██╔════╝██╔════╝██╔═══██╗    ██╔══██╗██╔══██╗██║██╔══██╗██╔════╝
+    ███████╗█████╗  ██║   ██║    ██████╔╝██████╔╝██║██║  ██║█████╗
+    ╚════██║██╔══╝  ██║   ██║    ██╔═══╝ ██╔══██╗██║██║  ██║██╔══╝
+    ███████║███████╗╚██████╔╝    ██║     ██║  ██║██║██████╔╝███████╗
+    ╚══════╝╚══════╝ ╚═════╝     ╚═╝     ╚═╝  ╚═╝╚═╝╚═════╝ ╚══════╝
+ ==================================================================================-->
+
+<!DOCTYPE html>
+<html amp lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PANGERAN700 Indonesia | Simbol Pengembangan Digital Modern dengan Fokus pada Kualitas Pengalaman</title>
+  <meta name="description"
+    content="PANGERAN700 Indonesia membangun pengalaman digital melalui pengembangan teknologi berkelanjutan, penyempurnaan sistem yang konsisten, dan komitmen terhadap kualitas layanan yang relevan bagi pengguna modern." />
+  <meta name="robots" content="index, follow" />
+  <link rel="shortcut icon" href="https://ik.imagekit.io/ejvvkmrcv/icon-pangeran700.png" type="image/x-icon" />
+  <link rel="canonical" href="https://pangeran700.org/" />
+
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+
+  <style amp-custom>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(180deg, rgba(30, 0, 0, .6), rgba(10, 0, 0, .95)), url("https://ik.imagekit.io/ejvvkmrcv/pangeran700slotes.png") center/cover no-repeat fixed;
+      color: #fff;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .logo-container {
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .logo-img {
+      filter: drop-shadow(0 0 10px rgba(255, 215, 102, .5));
+    }
+
+    .sub-heading {
+      font-size: 13px;
+      letter-spacing: 3px;
+      color: #ffd966;
+      margin-bottom: 25px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .banner-card {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      border: 2px solid #ffd966;
+      box-shadow: 0 0 20px rgba(255, 215, 102, .3);
+    }
+
+    .btn-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+
+    .btn-card {
+      background: rgba(30, 0, 0, .85);
+      border: 1px solid rgba(255, 215, 102, .4);
+      border-radius: 10px;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .btn-card:hover {
+      transform: translateY(-2px);
+      border-color: #ffffff;
+      background: rgba(50, 0, 0, .9);
+    }
+
+    .btn-text {
+      text-align: left;
+    }
+
+    .btn-title {
+      font-family: 'Cinzel', serif;
+      font-size: 18px;
+      color: #ffd966;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+
+    .btn-sub {
+      font-size: 11px;
+      color: #ffffff;
+      margin-top: 2px;
+      opacity: 0.8;
+    }
+
+    .action-link {
+      background: linear-gradient(135deg, #ff0000, #990000);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 0 10px rgba(255, 0, 0, .4);
+    }
+
+    .copyright {
+      margin-top: 40px;
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="logo-container">
+      <a href="https://pangeran700.org/">
+        <amp-img class="logo-img" src="https://ik.imagekit.io/ejvvkmrcv/pangeran700gagah.png" width="200" height="50"
+          layout="fixed" alt="PANGERAN700"></amp-img>
+      </a>
+    </div>
+
+    <div class="sub-heading">PANGERAN700 BUKAN SEKEDAR SITUS BIASA!!!!</div>
+
+    <div class="banner-card">
+      <amp-img src="https://ik.imagekit.io/ejvvkmrcv/pangeran700slotes.png" width="500" height="500" layout="responsive"
+        alt="PANGERAN700 Banner"></amp-img>
+    </div>
+
+    <div class="btn-stack">
+      <a class="btn-card" href="https://aksespol88.com/">
+        <div class="btn-text">
+          <div class="btn-title">DAFTAR</div>
+          <div class="btn-sub">Bonus New Member 100%</div>
+        </div>
+        <div class="action-link">KLIK DISINI</div>
+      </a>
+
+      <a class="btn-card" href="https://aksespol88.com/">
+        <div class="btn-text">
+          <div class="btn-title">LOGIN</div>
+          <div class="btn-sub">Masuk ke Akun Anda</div>
+        </div>
+        <div class="action-link">KLIK DISINI</div>
+      </a>
+
+      <a class="btn-card" href="https://aksespol88.com/">
+        <div class="btn-text">
+          <div class="btn-title">LIVECHAT</div>
+          <div class="btn-sub">Layanan Bantuan 24/7</div>
+        </div>
+        <div class="action-link">KLIK DISINI</div>
+      </a>
+    </div>
+
+    <div class="copyright">
+      © 2026 PANGERAN700 - ALL RIGHTS RESERVED.
+    </div>
+  </div>
+
+</body>
+
+</html>
